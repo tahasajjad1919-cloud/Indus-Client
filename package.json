@@ -1,0 +1,9 @@
+{
+  "name": "indus-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Indus Client API: shared cosmetics, emblem, friends, skins, Discord link, partners",
+  "main": "indus-api.js",
+  "scripts": { "start": "node indus-api.js" },
+  "engines": { "node": ">=18" }
+}
