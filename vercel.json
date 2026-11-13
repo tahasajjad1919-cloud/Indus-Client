@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "http://legacy-1.mantranodes.fun:19153/:path*" }
+  ]
+}

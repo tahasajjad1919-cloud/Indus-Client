@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indus Client · The Minecraft client with friends, emotes and rewards</title>
+  <meta name="description" content="Indus Client: the premium Minecraft client for every version from 1.8.9 to 26.3. 46 built-in mods, boosted FPS, animated cosmetics and one-click servers." />
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="top">
+    <a class="brand" href="#"><img src="assets/logo-white.png" alt="" />INDUS CLIENT</a>
+    <div class="top-right">
+      <span class="online"><i></i><b>50+</b> built-in mods</span>
+      <a class="signin-btn" id="signinBtn" href="#account">Sign in</a>
+      <a class="dl-block" href="https://github.com/tahasajjad1919-cloud/Indus-Client/releases/download/v1.0.13/IndusClient-Setup-1.0.13.exe"><svg viewBox="0 0 24 24"><path d="M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM4 18h16v2H4z"/></svg>Download</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span><em>Menu</em></button>
+    </div>
+  </header>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+    <nav class="drawer-nav">
+      <a href="#new">What's new</a><a href="#features">Features</a><a href="#numbers">Numbers</a><a href="#compare">Why Indus</a>
+      <a href="#vip">VIP</a><a href="#store">Store</a><a href="#wheel">Spin demo</a><a href="#changelog">Changelog</a><a href="#account">Account &amp; orders</a><a href="#tickets">Tickets</a><a href="#follow">Socials</a><a href="#faq">Support</a>
+    </nav>
+    <a class="btn green drawer-dl" href="https://github.com/tahasajjad1919-cloud/Indus-Client/releases/download/v1.0.13/IndusClient-Setup-1.0.13.exe">Download Indus Client</a>
+    <div class="drawer-soc"><a href="https://discord.gg/indusclient" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24"><path d="M19.6 5.3A16 16 0 0 0 15.7 4l-.5 1a15 15 0 0 0-6.4 0l-.5-1a16 16 0 0 0-3.9 1.3C1.9 9 1.2 12.7 1.5 16.3A16 16 0 0 0 6.3 19l1-1.6a10 10 0 0 1-1.6-.8l.4-.3a11.5 11.5 0 0 0 11.8 0l.4.3a10 10 0 0 1-1.6.8l1 1.6a16 16 0 0 0 4.8-2.7c.4-4.1-.7-7.8-2.9-11zM8.7 14.2c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm6.6 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg></a><a href="https://www.youtube.com/@IndusClient" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a><a href="https://www.tiktok.com/@indusclient" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3.1a7.6 7.6 0 0 1-4.1-1.2v6.3A6 6 0 1 1 10.7 9v3.2a2.9 2.9 0 1 0 2.6 2.9V3z"/></svg></a><a href="https://www.instagram.com/indusclient/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zM7.5 4h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zM12 9.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM17.3 5.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a><a href="https://x.com/indusclinet" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a href="https://indusclient.com" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.9a15.6 15.6 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8 8 0 0 1 0-4h3.4a16 16 0 0 0 0 4zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16zM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.3 6.7 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14 14 0 0 1 0-4h4.6a14 14 0 0 1 0 4zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6zM16.3 14a16 16 0 0 0 0-4h3.4a8 8 0 0 1 0 4z"/></svg></a></div>
+  </aside>
+  <div class="drawer-shade" id="drawerShade"></div>
+  <nav class="subnav" id="subnav">
+    <a href="#news">News</a>
+    <a href="#new">What's new</a>
+    <a href="#features">Features</a>
+    <a href="#vip">VIP</a>
+    <a href="#mods">Mods</a>
+    <a href="#screens">Screenshots</a>
+    <a href="#partner">Hosting</a>
+    <a href="#faq">Support</a>
+    <a href="#follow">Socials</a>
+    <a href="#store">Store</a>
+    <a href="#account">Account</a>
+    <a href="#tickets">Tickets</a>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="download">
+    <div class="hero-bg"></div>
+    <canvas class="hero-fx" id="heroFx" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <img class="emblem" src="assets/logo-white.png" alt="Indus Client" />
+      <h1>INDUS CLIENT</h1>
+      <p>The premium client for every version of Minecraft, from 1.8.9 to 26.3. Friends, emotes, rewards and cosmetics everyone can see.</p>
+      <div class="hero-btns">
+        <a class="btn green" href="https://github.com/tahasajjad1919-cloud/Indus-Client/releases/download/v1.0.13/IndusClient-Setup-1.0.13.exe">
+          <svg viewBox="0 0 24 24"><path d="M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM4 18h16v2H4z"/></svg>Download
+        </a>
+        <a class="btn gold" href="#store">
+          <svg viewBox="0 0 24 24"><path d="M2 3h3l2.5 12h11L21 7H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.7"/><circle cx="17" cy="19.5" r="1.7"/></svg>Store
+        </a>
+      </div>
+      <small>Free for Windows 10 / 11 · 64-bit · Updates itself</small>
+    </div>
+  </section>
+
+  <!-- ===== Feature tiles ===== -->
+  <section class="tiles" id="features">
+    <a class="tile" style="--img:url(assets/screens/launcher.png)"><small>One download to launch</small><b>Single<br />Install</b></a>
+    <a class="tile" style="--img:url(assets/screens/modmenu.png)"><small>46 built-in mods</small><b>Countless<br />Mods</b></a>
+    <a class="tile" href="#store" style="--img:url(assets/screens/cosmetics.png)"><small>Capes, wings, pets &amp; more</small><b>Animated<br />Cosmetics</b></a>
+    <a class="tile" style="--img:url(assets/screens/title.png)"><small>1.8.9 to 26.3</small><b>Every<br />Version</b></a>
+  </section>
+
+  <!-- ===== What's new ===== -->
+  <section class="newsec" id="new">
+    <div class="wrap">
+      <h2 class="title">Way more than a launcher</h2>
+      <p class="lead">Everything you need to play with friends, show off and earn rewards, built right in.</p>
+      <div class="feat-grid">
+        <div class="feat"><i>🎁</i><b>Daily rewards</b><p>Spin the wheel, keep your login streak, finish quests and answer the daily Minecraft quiz for coins.</p></div>
+        <div class="feat"><i>💃</i><b>Emotes</b><p>Press G in game: twerk, floss, dab, wave, chill and more. Every Indus player sees them.</p></div>
+        <div class="feat"><i>🤝</i><b>Friends &amp; parties</b><p>Add anyone, even cracked accounts. Chat, see what server they're on and join or invite them in one click.</p></div>
+        <div class="feat"><i>⭐</i><b>Levels &amp; achievements</b><p>Earn XP by playing, level up for coins, unlock 10 achievements and climb the leaderboards.</p></div>
+        <div class="feat"><i>🎨</i><b>Shaders &amp; modpacks</b><p>Install shaders and whole modpacks from the launcher. No folders, no fuss.</p></div>
+        <div class="feat"><i>🖼️</i><b>Your own menu</b><p>Pick a wallpaper, move your 3D skin, hide what you don't need. It's your main menu.</p></div>
+        <div class="feat"><i>🎵</i><b>Indus Music</b><p>VIPs get relaxing, copyright-free music right in the launcher: Lo-fi, Piano and Rain.</p></div>
+        <div class="feat"><i>🔊</i><b>Kill sounds &amp; soundboard</b><p>VIPs can add their own kill sound and soundboard clips (press N in game).</p></div>
+        <div class="feat"><i>🌈</i><b>7 themes</b><p>White, Black, Translucent, Ocean, Crimson and Emerald. Make the launcher yours.</p></div>
+      
+        <div class="feat"><i>🎫</i><b>Support tickets</b><p>Ask for help here or in the launcher. The Indus team answers right in your ticket.</p></div>
+        <div class="feat"><i>🛒</i><b>Order on the website</b><p>Sign in with a code from the launcher, buy cosmetics with coins or order coins, VIP and cosmetics.</p></div>
+        <div class="feat"><i>🔥</i><b>Kill streaks & Bedwars moments</b><p>“DOUBLE KILL!”, bed broken, victory confetti and a hit marker. All in the new Fun tab.</p></div>
+        <div class="feat"><i>👀</i><b>Freelook</b><p>Hold Left Alt to look around while you keep walking straight (off on Hypixel).</p></div>
+        <div class="feat"><i>🐍</i><b>Indus Arcade</b><p>Snake on the main menu and in the pause menu, plus a creeper-jumping game while Minecraft loads.</p></div>
+        <div class="feat"><i>🪟</i><b>Transparent menus</b><p>Pick a Menu Theme in game: Transparent, Midnight, Ocean, Crimson, Emerald, Violet or Gold.</p></div>
+        <div class="feat"><i>🧍</i><b>You in the pause menu</b><p>Press Esc to see your own 3D character, cosmetics and all, with your name above your head.</p></div>
+        <div class="feat"><i>📚</i><b>The Library</b><p>Mods, resource packs, shaders and modpacks in one place, from Modrinth and CurseForge.</p></div>
+        <div class="feat"><i>🎭</i><b>24 new cosmetics & 8 emotes</b><p>Space Helmet, LED Mask, Cyber Visor, hand effects, Monster Bats, new capes, Air Guitar, Robot and more.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Numbers ===== -->
+  <section class="numbers reveal" id="numbers">
+    <div class="wrap num-grid">
+      <div><b data-count="55">0</b><small>built-in mods</small></div>
+      <div><b data-count="103">0</b><small>cosmetics</small></div>
+      <div><b data-count="18">0</b><small>emotes</small></div>
+      <div><b data-count="10">0</b><small>launcher themes</small></div>
+      <div><b data-count="3">0</b><small>game versions with Indus mods</small></div>
+    </div>
+  </section>
+
+  <!-- ===== Why Indus ===== -->
+  <section class="compare reveal" id="compare">
+    <div class="wrap">
+      <h2 class="title">Why Indus?</h2>
+      <p class="lead">Everything other clients charge for or leave out, built in and free.</p>
+      <div class="cmp">
+        <div class="cmp-row head"><span></span><b>Indus Client</b><b>A typical client</b></div>
+        <div class="cmp-row"><span>Cosmetics everyone sees</span><i class="y">✓</i><i class="y">✓</i></div>
+        <div class="cmp-row"><span>Emotes on 1.8.9 and 1.21</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Friends for cracked accounts</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Earn cosmetics by playing (coins, quests, spin)</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Shaders &amp; modpacks in one click</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Crash helper that explains crashes</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Join your friend's server in one click</span><i class="y">✓</i><i class="n">✕</i></div>
+        <div class="cmp-row"><span>Completely free</span><i class="y">✓</i><i class="n">~</i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Spin demo ===== -->
+  <section class="wheelsec reveal" id="wheel">
+    <div class="wrap wheel-wrap-site">
+      <div>
+        <h2 class="title">Feeling lucky?</h2>
+        <p class="lead">Every day in the launcher you get a free spin for coins, XP or even a cosmetic. Try a demo spin here.</p>
+        <button class="btn gold" id="demoSpin">Spin the wheel</button>
+        <p class="demo-result" id="demoResult"></p>
+      </div>
+      <div class="demo-wheel-box"><div class="demo-wheel" id="demoWheel"></div><i class="demo-pin"></i></div>
+    </div>
+  </section>
+
+  <!-- ===== Changelog ===== -->
+  <section class="changelog reveal" id="changelog">
+    <div class="wrap">
+      <h2 class="title">Changelog</h2>
+      <div class="timeline">
+        <div class="tl"><b>1.0.13</b><p>A new welcome and setup, profile import from other launchers, a mod finder that understands plain words, a Store button, your skin in the launch game, CPS Test and Aim Trainer, an AFK screen, Menu Snow and Chroma HUD.</p></div>
+        <div class="tl"><b>1.0.12</b><p>Support tickets, website sign-in and orders, the Library with CurseForge, 24 new cosmetics with hand effects, 8 new emotes, kill streaks, Bedwars moments, Freelook, the Indus Arcade, transparent menus, you in the pause menu, and more FPS.</p></div>
+        <div class="tl"><b>1.0.11</b><p>3 new themes, an emote shop, 11 new animated cosmetics, Indus Music and kill sounds for VIPs, a smooth new motion blur, sound reload and Hit Delay Fix on 1.8.9, more FPS on 1.16+, Socials and Your Indus Stats.</p></div>
+        <div class="tl"><b>1.0.10</b><p>Shaders and modpacks, 17 new cosmetics, emotes on 1.8.9, VIP with coins, new wallpapers and click sounds.</p></div>
+        <div class="tl"><b>1.0.9</b><p>Rewards, levels, achievements, leaderboards, mystery boxes, gifting, party invites and a daily quiz.</p></div>
+        <div class="tl"><b>1.0.8</b><p>Coins, an inbox, a buy menu, emotes, an owner panel and new cosmetics.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Follow us ===== -->
+  <section class="follow reveal" id="follow">
+    <div class="wrap">
+      <h2 class="title">Follow Indus Client</h2>
+      <p class="lead">Giveaways, sneak peeks and free cosmetics. Don't miss out.</p>
+      <div class="soc-grid"><a class="soc-card" href="https://discord.gg/indusclient" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.6 5.3A16 16 0 0 0 15.7 4l-.5 1a15 15 0 0 0-6.4 0l-.5-1a16 16 0 0 0-3.9 1.3C1.9 9 1.2 12.7 1.5 16.3A16 16 0 0 0 6.3 19l1-1.6a10 10 0 0 1-1.6-.8l.4-.3a11.5 11.5 0 0 0 11.8 0l.4.3a10 10 0 0 1-1.6.8l1 1.6a16 16 0 0 0 4.8-2.7c.4-4.1-.7-7.8-2.9-11zM8.7 14.2c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm6.6 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg><b>Discord</b><small>Join the community</small></a><a class="soc-card" href="https://www.youtube.com/@IndusClient" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg><b>YouTube</b><small>@IndusClient</small></a><a class="soc-card" href="https://www.tiktok.com/@indusclient" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3.1a7.6 7.6 0 0 1-4.1-1.2v6.3A6 6 0 1 1 10.7 9v3.2a2.9 2.9 0 1 0 2.6 2.9V3z"/></svg><b>TikTok</b><small>@indusclient</small></a><a class="soc-card" href="https://www.instagram.com/indusclient/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zM7.5 4h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zM12 9.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM17.3 5.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg><b>Instagram</b><small>@indusclient</small></a><a class="soc-card" href="https://x.com/indusclinet" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg><b>X</b><small>@indusclinet</small></a><a class="soc-card" href="https://indusclient.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.9a15.6 15.6 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8 8 0 0 1 0-4h3.4a16 16 0 0 0 0 4zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16zM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.3 6.7 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14 14 0 0 1 0-4h4.6a14 14 0 0 1 0 4zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6zM16.3 14a16 16 0 0 0 0-4h3.4a8 8 0 0 1 0 4z"/></svg><b>Website</b><small>indusclient.com</small></a></div>
+    </div>
+  </section>
+
+  <!-- ===== Partner + news + socials ===== -->
+  <section class="light">
+    <div class="wrap grid2">
+      <div>
+        <div class="partner" id="partner">
+          <div class="partner-logo"><img src="assets/mantra-m.png" alt="Mantra Nodes" /><span>MANTRA<br />NODES</span></div>
+          <p><b>Mantra Nodes is the Official Hosting Partner of Indus Client.</b> Create your own Minecraft server with fast, reliable hosting and low ping. <a class="partner-discord" href="https://discord.gg/mantranodes" target="_blank" rel="noopener">Join their Discord</a></p>
+          <a class="partner-cta" href="https://www.mantranodes.fun/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8l4 4-4 4" fill="none" stroke="#f2d27b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Visit Mantra</a>
+        </div>
+
+        <article class="latest" id="news" style="--img:url(assets/news/indusmc.webp)">
+          <span class="ribbon">Latest</span>
+          <span class="when">Today</span>
+          <div class="latest-body">
+            <h2>IndusMC launched</h2>
+            <p>The official Indus server is live. Add it on the Play page and jump in with one click.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <div class="socials" id="socials">
+          <h3>Follow our socials</h3>
+          <div class="soc"><a href="https://discord.gg/indusclient" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24"><path d="M19.6 5.3A16 16 0 0 0 15.7 4l-.5 1a15 15 0 0 0-6.4 0l-.5-1a16 16 0 0 0-3.9 1.3C1.9 9 1.2 12.7 1.5 16.3A16 16 0 0 0 6.3 19l1-1.6a10 10 0 0 1-1.6-.8l.4-.3a11.5 11.5 0 0 0 11.8 0l.4.3a10 10 0 0 1-1.6.8l1 1.6a16 16 0 0 0 4.8-2.7c.4-4.1-.7-7.8-2.9-11zM8.7 14.2c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm6.6 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg></a><a href="https://www.youtube.com/@IndusClient" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a><a href="https://www.tiktok.com/@indusclient" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3.1a7.6 7.6 0 0 1-4.1-1.2v6.3A6 6 0 1 1 10.7 9v3.2a2.9 2.9 0 1 0 2.6 2.9V3z"/></svg></a><a href="https://www.instagram.com/indusclient/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zM7.5 4h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zM12 9.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM17.3 5.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a><a href="https://x.com/indusclinet" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a href="https://indusclient.com" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.9a15.6 15.6 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8 8 0 0 1 0-4h3.4a16 16 0 0 0 0 4zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16zM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.3 6.7 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14 14 0 0 1 0-4h4.6a14 14 0 0 1 0 4zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6zM16.3 14a16 16 0 0 0 0-4h3.4a8 8 0 0 1 0 4z"/></svg></a></div>
+        </div>
+        <a class="side-news" style="--img:url(assets/news/motion-blur.webp)">
+          <b>New: built-in Motion Blur</b><small>This week</small><i></i>
+        </a>
+        <a class="side-news" href="https://www.mantranodes.fun/" target="_blank" rel="noopener" style="--img:url(assets/news/mantra-nodes.png)">
+          <b>Indus Client x Mantra Nodes</b><small>This week</small><i></i>
+        </a>
+      </aside>
+    </div>
+
+    <!-- mods -->
+    <div class="wrap" id="mods">
+      <h2 class="title">55+ built-in mods</h2>
+      <p class="lead">Toggle any of them from the in-game mod menu (Right Shift). Drag HUD mods anywhere in Edit HUD.</p>
+      <div class="chips" id="modChips"></div>
+    </div>
+
+    <!-- screenshots -->
+    <div class="wrap" id="screens">
+      <h2 class="title">Screenshots</h2>
+      <div class="gallery">
+        <figure><img src="assets/screens/title.png" alt="Main menu" /><figcaption>Main menu</figcaption></figure>
+        <figure><img src="assets/screens/launcher.png" alt="Launcher" /><figcaption>The Indus launcher</figcaption></figure>
+        <figure><img src="assets/screens/wardrobe.png" alt="Wardrobe" /><figcaption>Wardrobe: try on every cosmetic</figcaption></figure>
+        <figure><img src="assets/screens/cosmetics.png" alt="Cosmetics" /><figcaption>Animated hats, wings, pets and auras</figcaption></figure>
+        <figure><img src="assets/screens/modmenu.png" alt="Mod menu" /><figcaption>Mod menu (Right Shift)</figcaption></figure>
+        <figure><img src="assets/screens/hudeditor.png" alt="HUD editor" /><figcaption>Edit HUD: move, resize, add or remove</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="wrap faq" id="faq">
+      <h2 class="title">Support</h2>
+      <details><summary>Is Indus Client free?</summary><p>Yes. Indus Client is free to download and use.</p></details>
+      <details><summary>Which versions are supported?</summary><p>The launcher plays every release from 26.3 down to 1.8.9. The Indus menus and built-in mods are in 26.3, 1.21.9 – 1.21.11 and 1.8.9 (Forge).</p></details>
+      <details><summary>How do I get cosmetics?</summary><p>Earn coins by playing, daily rewards, quests and the spin wheel, then buy cosmetics in the launcher's Wardrobe or the in-game Store. You can also buy them with money on the <a href="https://discord.com/channels/1537993539307176047/1569461220040384523" target="_blank" rel="noopener">Indus Discord</a>, or open a mystery box.</p></details>
+      <details><summary>What do I get with VIP?</summary><p>A gold + next to your Indus emblem, VIP-only cosmetics, double coins, 20% off the coin shop, your own menu wallpaper, Indus Music, a custom kill sound and a soundboard. Get it with coins in the launcher or on the Discord.</p></details>
+      <details><summary>How do I use emotes?</summary><p>Press G in game and pick one. Wave, Clap, Salute and Facepalm are free; buy the others with coins in the launcher's Wardrobe (Emotes tab). Every Indus player sees your emotes.</p></details>
+      <details><summary>How do I add my own kill sound?</summary><p>VIPs: put a <i>kill.wav</i> file in the <i>indus-sounds</i> folder of your game folder, and soundboard clips (.wav) in <i>indus-sounds/soundboard</i>. Press N in game to open the soundboard.</p></details>
+      <details><summary>Can cracked (offline) accounts use friends and cosmetics?</summary><p>Yes. Friends, chat, coins and cosmetics work with Microsoft and cracked accounts.</p></details>
+      <details><summary>Do I need to own Minecraft?</summary><p>To play on online servers like Hypixel you need a Microsoft account that owns Minecraft: Java Edition. Offline accounts work in singleplayer and offline-mode servers.</p></details>
+      <details><summary>Windows or my browser warns about the download. Is it safe?</summary><p>Yes. Indus Client isn't code-signed yet, so Windows SmartScreen and some browsers show a notice for new apps. In the browser choose <i>Keep</i>, and in Windows click <i>More info → Run anyway</i>. The warning goes away as more players download it.</p></details>
+    </div>
+
+    <!-- CTA -->
+    <div class="wrap">
+      <div class="cta">
+        <img src="assets/logo-white.png" alt="" />
+        <p><b>Boosted frames</b>, all the <b>popular mods</b>, every version and did we mention it's <b>completely free</b>?<br /><b>So what are you waiting for? Download today!</b></p>
+        <a class="cta-btn" href="https://github.com/tahasajjad1919-cloud/Indus-Client/releases/download/v1.0.13/IndusClient-Setup-1.0.13.exe"><svg viewBox="0 0 24 24"><path d="M11 3h2v9.2l3.6-3.6L18 10l-6 6-6-6 1.4-1.4 3.6 3.6zM4 18h16v2H4z"/></svg>Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIP ===== -->
+  <section class="vipsec" id="vip">
+    <div class="wrap vip-wrap">
+      <div>
+        <span class="vip-pill">VIP</span>
+        <h2 class="title">Indus VIP</h2>
+        <p class="lead">Support Indus Client and get the best of it.</p>
+        <ul class="vip-list">
+          <li><b>Gold +</b> next to your Indus emblem, seen by everyone</li>
+          <li><b>VIP-only cosmetics</b>: the Royal cape and Gilded wings</li>
+          <li><b>Double coins</b> from daily rewards, quests and playing</li>
+          <li><b>20% off</b> every cosmetic in the coin shop</li>
+          <li><b>Your own picture</b> as the in-game menu wallpaper</li>
+          <li><b>Indus Music</b>: relaxing copyright-free music in the launcher</li>
+          <li><b>Custom kill sound</b> and your own <b>soundboard</b></li>
+        </ul>
+      </div>
+      <div class="vip-card">
+        <b>30 days</b>
+        <span class="vip-price">◆ 6,000 coins</span>
+        <small>Buy it in the launcher: click your coins → Get VIP</small>
+        <a class="btn gold" href="https://discord.com/channels/1537993539307176047/1569461220040384523" target="_blank" rel="noopener">Buy with money on Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cosmetics store ===== -->
+  <section class="store" id="store">
+    <div class="wrap">
+      <h2 class="title">Cosmetics Store</h2>
+      <p class="lead">Capes, hats, wings, boots, pets, auras and backpacks. Most of them are animated. Every Indus player sees what you wear.</p>
+      <div class="store-tabs" id="storeTabs"></div>
+      <div class="store-grid" id="storeGrid"></div>
+      <p class="store-note">Sign in above to buy with your coins right here, use the launcher (Wardrobe) or the in-game Store, or buy with money on the <a href="https://discord.com/channels/1537993539307176047/1569461220040384523" target="_blank" rel="noopener">Indus Client Discord</a>. Cosmetics unlock right away.</p>
+    </div>
+  </section>
+
+  <!-- ===== Account: sign in, orders ===== -->
+  <section class="acct" id="account">
+    <div class="wrap">
+      <h2 class="title">Your Indus account</h2>
+      <p class="lead">Sign in to buy cosmetics with your coins, or order coins, VIP and cosmetics.</p>
+      <div class="acct-out" id="acctOut">
+        <ol class="steps">
+          <li>Open the <b>Indus Client</b> launcher.</li>
+          <li>Click the Indus logo (top left) and choose <b>Sign in on the website</b>.</li>
+          <li>Type the code you see here.</li>
+        </ol>
+        <form class="code-row" id="loginForm"><input id="loginCode" placeholder="ABC-123" maxlength="8" autocomplete="off" spellcheck="false" /><button class="btn white-btn" type="submit">Sign in</button></form>
+        <p class="form-msg" id="loginMsg"></p>
+      </div>
+      <div class="acct-in" id="acctIn" hidden>
+        <div class="me-card">
+          <img id="meHead" alt="" />
+          <div><b id="meName">Player</b><small id="meSub"></small></div>
+          <div class="me-coins"><span id="meCoins">0</span><small>coins</small></div>
+          <button class="link-btn" id="logoutBtn">Sign out</button>
+        </div>
+        <div class="acct-grid">
+          <form class="panel" id="orderForm">
+            <h3>Place an order</h3>
+            <p class="small">Pick what you want. The Indus team contacts you with the payment details, and it is added to your account as soon as you have paid.</p>
+            <label>What do you want?<select name="kind" id="orderKind"><option value="coins">Coins</option><option value="vip">30 days of VIP</option><option value="item">A cosmetic</option></select></label>
+            <label id="packRow">Coin pack<select name="pack" id="orderPack"></select></label>
+            <label id="itemRow" hidden>Cosmetic<select name="item" id="orderItem"></select></label>
+            <label>How do you want to pay?<select name="method" id="orderMethod"></select></label>
+            <label>Your Discord name or email<input name="contact" maxlength="100" required placeholder="So we can send you the payment details" /></label>
+            <label>Note (optional)<input name="note" maxlength="200" placeholder="Anything we should know?" /></label>
+            <button class="btn white-btn" type="submit">Place order</button>
+            <p class="form-msg" id="orderMsg"></p>
+          </form>
+          <div class="panel">
+            <h3>My orders</h3>
+            <div id="myOrders" class="rows"><p class="small">No orders yet.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Support tickets ===== -->
+  <section class="acct tix" id="tickets">
+    <div class="wrap">
+      <h2 class="title">Support tickets</h2>
+      <p class="lead">Something not working? Open a ticket and the Indus team will reply.</p>
+      <div class="acct-grid">
+        <form class="panel" id="ticketForm">
+          <h3>Open a ticket</h3>
+          <label>Your name<input name="name" maxlength="32" placeholder="Minecraft name" /></label>
+          <label>Contact (Discord or email)<input name="contact" maxlength="100" placeholder="So we can reach you" /></label>
+          <label>Topic<select name="category"><option>Bug</option><option>Crash</option><option>Account</option><option>Payment</option><option>Cosmetics</option><option>Suggestion</option><option>Other</option></select></label>
+          <label>Title<input name="subject" maxlength="100" required placeholder="e.g. My cape doesn&#39;t show on Hypixel" /></label>
+          <label>What happened?<textarea name="message" maxlength="2000" rows="5" required placeholder="Version, server, what you clicked…"></textarea></label>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn white-btn" type="submit">Send ticket</button>
+          <p class="form-msg" id="ticketMsg"></p>
+        </form>
+        <div class="panel">
+          <h3>My tickets</h3>
+          <form class="code-row" id="codeForm"><input id="codeInput" placeholder="Ticket code, e.g. TAB12C-1f2e3d4c5b" autocomplete="off" spellcheck="false" /><button class="btn ghost-btn">Open</button></form>
+          <div id="myTickets" class="rows"></div>
+          <div id="thread" class="thread" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="foot-links">
+      <div class="foot-brand"><img src="assets/logo-white.png" alt="" /><span>© 2026 Indus Client</span></div>
+      <nav><a href="https://indusclient.com">indusclient.com</a><a href="https://discord.gg/indusclient" target="_blank" rel="noopener">Discord</a><a href="https://www.youtube.com/@IndusClient" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@indusclient" target="_blank" rel="noopener">TikTok</a><a href="https://www.instagram.com/indusclient/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/indusclinet" target="_blank" rel="noopener">X</a><a href="#store">Store</a><a href="https://www.mantranodes.fun/" target="_blank" rel="noopener">Mantra Nodes</a><a href="#faq">Support</a><a href="#news">News</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="#partner">Hosting</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+    </div>
+    <p class="legal">Not affiliated with Mojang or Microsoft.</p>
+  </footer>
+
+  <a class="float-discord" href="https://discord.gg/indusclient" target="_blank" rel="noopener" aria-label="Join our Discord"><svg viewBox="0 0 24 24"><path d="M19.6 5.3A16 16 0 0 0 15.7 4l-.5 1a15 15 0 0 0-6.4 0l-.5-1a16 16 0 0 0-3.9 1.3C1.9 9 1.2 12.7 1.5 16.3A16 16 0 0 0 6.3 19l1-1.6a10 10 0 0 1-1.6-.8l.4-.3a11.5 11.5 0 0 0 11.8 0l.4.3a10 10 0 0 1-1.6.8l1 1.6a16 16 0 0 0 4.8-2.7c.4-4.1-.7-7.8-2.9-11zM8.7 14.2c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm6.6 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg></a>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="assets/store/items.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
